@@ -1,22 +1,20 @@
 import React from 'react';
-import Sidebar from './components/Sidebar';
+import Payment from './components/Payment';
 import UserBar from './components/UserBar';
-import Activatebar from './components/Activatebar';
-import BaForm from './components/BaForm';
+import PaView from './components/PaView';
+import PaymentActive from './components/PaymentActive';
 
 function App() {
   return (
     <div className='flex'>
-      <Sidebar />
+      <PaymentActive />
       <div className='flex-1 flex flex-col'>
         <UserBar />
-        <Activatebar />
-        <div className="flex justify-center bg-green-500 items-center p-8 min-h-[60vh]">
-          <BaForm />
-        </div>
-      </div>
-      
-      
+        <Payment />
+       <PaView />
+       
+
+      </div> 
   
     </div>
   );
